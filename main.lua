@@ -14,16 +14,15 @@ for i, v in ipairs(workspace.Arena.island5.Slapples:GetDescendants()) do
                     firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 0)
         firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 1)
                 end
-            end
+	end
+
 if game.Workspace:FindFirstChild("SiphonOrb") then
 for i,v in pairs(game.Workspace:GetChildren()) do
                     if v.Name == "SiphonOrb" then
 wait(1)
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), v, 0)
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), v, 1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.SiphonOrb.CFrame
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "yo bro",Text = "you got siphon" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
 wait(1)
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "yo bro",Text = "you got something" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
-wait(5)
                     end
                 end
                 end
