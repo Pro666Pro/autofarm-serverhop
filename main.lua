@@ -19,10 +19,9 @@ for i, v in ipairs(workspace.Arena.island5.Slapples:GetDescendants()) do
 if game.Workspace:FindFirstChild("SiphonOrb") then
 for i,v in pairs(game.Workspace:GetChildren()) do
                     if v.Name == "SiphonOrb" then
-wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.SiphonOrb.CFrame
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "yo bro",Text = "you got siphon" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
-wait(1)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "siphon orb",Text = "siphon orb collected" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
+wait(2)
                     end
                 end
                 end
@@ -81,7 +80,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{Title = "hammer glove"
 end
 
 if game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 187186758930457) then
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "siphon glove",Text = "you got siphon gloev" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "k"})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "siphon glove",Text = "you got siphon gloev" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150eltton1 = "k"})
 end
 
 if game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 4256352459948010) then
