@@ -29,36 +29,52 @@ wait(2)
 if game.Workspace:FindFirstChild("HonorOrb") then
 for i,v in pairs(game.Workspace:GetChildren()) do
                     if v.Name == "HonorOrb" then
-wait(1)
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), v, 0)
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), v, 1)
-wait(1)
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "yo bro",Text = "you got something" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
-wait(5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.HonorOrb.CFrame
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "honor orb",Text = "honor orb collected" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
+wait(2)
                     end
                 end
                 end
 
 for i,v in pairs(game.Workspace:GetChildren()) do
-                    if v.Name == "JetOrb" or v.Name == "PhaseOrb" or v.Name == "GlitchOrb" or v.Name == "HonorOrb" then
-wait(1)
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), v, 0)
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), v, 1)
-wait(1)
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "yo bro",Text = "you got something" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
-wait(5)
+                    if v.Name == "JetOrb" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.JetOrb.CFrame
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "jet orb",Text = "jet orb collected" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
+wait(2)
+                    end
+                end
+
+for i,v in pairs(game.Workspace:GetChildren()) do
+                    if v.Name == "PhaseOrb" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.PhaseOrb.CFrame
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "phase orb",Text = "phase orb collected" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
+wait(2)
+                    end
+                end
+
+for i,v in pairs(game.Workspace:GetChildren()) do
+                    if v.Name == "GlitchOrb" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.GlitchOrb.CFrame
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "glitch orb",Text = "glitch orb collected" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
+wait(2)
+                    end
+                end
+
+for i,v in pairs(game.Workspace:GetChildren()) do
+                    if v.Name == "HonorOrb" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.HonorOrb.CFrame
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "honot orb",Text = "honor orb collected" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
+wait(2)
                     end
                 end
 
 if game.Workspace:FindFirstChild("Toolbox") then
 for i,v in pairs(game.Workspace:GetDescendants()) do
                     if v.Name == "Toolbox" and v:FindFirstChild("ClickDetector") then
-wait(1)
 fireclickdetector(v.ClickDetector, 0)
 fireclickdetector(v.ClickDetector, 1)
-wait(1)
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "yo bro",Text = "you got something" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
-wait(5)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "toolbox",Text = "toolbox collected" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "yo nice"})
+wait(2)
                     end
                 end
             end
